@@ -193,7 +193,7 @@ filter:
 # 1) 先调 min_score（推荐 0.5~0.7）
 # 2) 再调 reclassify_threshold（大改兴趣建议更低）
 # 3) 批量参数只影响速度/限流，不影响分类逻辑
-# 4) interests_file 不填就用 config/ai_interests.txt
+# 4) interests_file 不填就用 config/keywod
 # 5) prompt_file 系列属于进阶项，默认一般不用改
 #
 # 进阶说明：
