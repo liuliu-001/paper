@@ -104,7 +104,7 @@ rss:
   freshness_filter:
     enabled: true                     # 是否启用新鲜度过滤（默认启用）
 
-    max_age_days: 1                   # 最大文章年龄（天）
+    max_age_days: 90                   # 最文章年龄（天）
                                       # - 正整数：只推送 N 天内的文章
                                       # - 0：禁用过滤，推送所有文章
 
@@ -260,7 +260,7 @@ display:
   # 推送区域开关
   # 控制各区域是否启用（配合 region_order 使用）
   regions:
-    hotlist: true                     # 热榜区域（关键词匹配 / AI 智能筛选）
+    hotlist: false                     # 热榜区域（关键词匹配 / AI 智能筛选）
     new_items: false                   # 新增热点区域（含热榜新增 + RSS 新增）
                                       # 注：热点词汇统计中的新增标记🆕不受此配置影响
 
@@ -468,7 +468,7 @@ ai:
 # 模型配置见上方 ai 配置段
 # ===============================================================
 ai_analysis:
-  enabled: true                     # 是否启用 AI 分析（总开关）
+  enabled: false                     # 是否启用 AI 分析（总开关）
                                     # ⚠️ 开启调度系统后，此项仍为总开关：
                                     #   false → 永远不分析（无论调度怎么设置）
                                     #   true  → 由调度的 analyze 字段控制何时分析
