@@ -178,7 +178,7 @@ report:
 # 5) 这里决定“筛选路径”，不决定 AI 模型（模型在 ai 段）
 # ===============================================================
 filter:
-  method: "ai"                     # 可选: keyword | ai
+  method: "keyword"                     # 可选: keyword | ai
 
   # AI 模式标签排序开关（仅 ai 模式生效）
   # true: 按标签优先级排序（来自兴趣描述提取顺序）
@@ -193,7 +193,7 @@ filter:
 # 1) 先调 min_score（推荐 0.5~0.7）
 # 2) 再调 reclassify_threshold（大改兴趣建议更低）
 # 3) 批量参数只影响速度/限流，不影响分类逻辑
-# 4) interests_file 不填就用 config/keywod
+# 4) interests_file 不填就用 config/ai_interests.txt
 # 5) prompt_file 系列属于进阶项，默认一般不用改
 #
 # 进阶说明：
