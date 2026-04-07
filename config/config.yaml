@@ -173,7 +173,7 @@ report:
 # 新手 5 行：
 # 1) 先选 method：keyword（关键词）或 ai（兴趣分类）
 # 2) keyword 模式：看 config/frequency_words.txt
-# 3) ai 模式：看 config/ai_interests.txt + 下方 ai_filter 配置
+# 3) ai 模式：看 config/keyword + 下方 ai_filter 配置
 # 4) priority_sort_enabled 只影响 ai 模式标签排序
 # 5) 这里决定“筛选路径”，不决定 AI 模型（模型在 ai 段）
 # ===============================================================
