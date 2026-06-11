@@ -237,7 +237,7 @@ presets:
     periods:
       morning_briefing:
         name: "到岗速览"
-        start: "09:300"
+        start: "09:30"
         end: "12:00"
         analyze: true              # AI 分析当前热点
         ai_mode: "current"         # AI 分析当前榜单
